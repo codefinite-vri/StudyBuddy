@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resource Details</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+  <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/college.css">
+  <link href="../assets/css/style.min.css" rel="stylesheet">
+<link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" onclick="window.location.href='/'">StudentsCorner</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" onclick="window.location.href='/index' ">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" onclick="window.location.href='/searchf' ">Search</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" onclick="window.location.href='/add' ">Add</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" onclick="window.location.href='/modify' ">Modify</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" onclick="window.location.href='/delete' ">Delete</a>
+      </li>
+      <li class="sidebar-nav-item"> 
+        <a class="js-scroll-trigger" onclick="window.location.href='/display' ">Display</a>
+      </li>
+
+      <li class="sidebar-nav-item"> 
+        <a class="js-scroll-trigger" onclick="window.location.href='/logout' ">Log out</a>
+      </li>
+    </ul>
+  </nav>
+    
+      <div class="container-fluid"><center>
+            <div class="panel panel-default text-center">
+                     <div class="panel-heading pan3">
+                       <h1 class="hh1"><strong>Resources</strong></h1> 
+                       </div>
+                     </div>
+          
+                     <div class="panel-body">
+                       <table class="table table-striped tabldiv" >
+                                 
+    <div class="container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>RID</th>
+          <th>Name</th>
+          <th>Author</th>
+          <th>Type</th>
+          <th>Subject ID</th>
+          <th>Faculty ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% resource.forEach(function(res) { %> 
+        <tr>
+           <td><%= res.rid %> </td>
+           <td><a onclick="window.location.href='/viewpdf?category=<%= res.link %>'"><%= res.rname %></a></td>
+           <td><%= res.author %></td> 
+           <td><%= res.rtype %></td>
+           <td><%= res.sid %></td>
+           <td><%= res.fid %></td>
+        </tr>
+        <% }); %>
+                      </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </center>
+              </div>
+              <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../assets/js/stylish-portfolio.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+    * {
+        margin: 0px;
+      }
+      html, body{
+        height: 100%;
+      }
+    h1{
+        color:orangered;
+        font-family:cursive;
+        text-align: center;
+        margin-top: 200px;
+    }
+    body {
+        font: Times new roman, sans-serif;
+        line-height: 1.8;
+    }
+    .acc-pan{
+        margin-left: 280px;
+    }
+    .pan{
+        background:rgb(248, 243, 229);
+        margin-left: 275px;
+    }
+    .pan-head{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+    input[type=text],[type=integer],[type=email], select {
+    padding: 7px 10px;
+    margin: 2px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {   
+    padding: 7px 10px;
+    margin: 2px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.bt{
+    width: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+    margin-left: 27%;
+}
+ul{
+    font:400 18px times new roman,sans-serif ;
+    line-height:1.5;
+    color:black;
+    margin-left: 0%;
+}
+
+.hh1{
+    margin-top: 0px;
+}
+.thumbnail{color:#000;
+    font-family:cursive;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 14px;
+    background-color: rgb(255, 187, 0);
+
+}
